@@ -21,3 +21,11 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+redmine/.classpath
+redmine/.project
+redmine/.settings/org.eclipse.core.resources.prefs
+redmine/.settings/org.eclipse.jdt.core.prefs
+redmine/.settings/org.eclipse.m2e.core.prefs
+redmine/.settings/org.eclipse.wst.common.component
+redmine/.settings/org.eclipse.wst.common.project.facet.core.xml
+redmine/.settings/org.eclipse.wst.validation.prefs
