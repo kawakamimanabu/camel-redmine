@@ -29,3 +29,12 @@ redmine/.settings/org.eclipse.m2e.core.prefs
 redmine/.settings/org.eclipse.wst.common.component
 redmine/.settings/org.eclipse.wst.common.project.facet.core.xml
 redmine/.settings/org.eclipse.wst.validation.prefs
+/target/
+.project
+.settings/org.eclipse.core.resources.prefs
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.m2e.core.prefs
+.settings/org.eclipse.wst.common.component
+.settings/org.eclipse.wst.common.project.facet.core.xml
+.settings/org.eclipse.wst.validation.prefs
+.classpath
