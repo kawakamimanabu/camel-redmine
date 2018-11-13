@@ -1,4 +1,5 @@
-# Apache Camel Component for Redmine  
+# camel-redmine: Apache Camel Component for Redmine
+Level: Beginner  
 
 ## How to build  
 
