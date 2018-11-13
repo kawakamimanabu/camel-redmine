@@ -1,13 +1,12 @@
-Camel Component Project
-=======================
+# Apache Camel Component for Redmine
 
-This project is a template of a Camel component.
+## How to build
 
-To build this project use
+To build this project use  
 
     mvn install
 
-For more help see the Apache Camel documentation:
+For more help see the Apache Camel documentation:  
 
     http://camel.apache.org/writing-components.html
     
