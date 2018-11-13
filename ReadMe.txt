@@ -1,6 +1,6 @@
-# Apache Camel Component for Redmine
+# Apache Camel Component for Redmine  
 
-## How to build
+## How to build  
 
 To build this project use  
 
