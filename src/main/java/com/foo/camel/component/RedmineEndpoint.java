@@ -12,11 +12,15 @@ import org.apache.camel.spi.UriPath;
 /**
  * Represents a Redmine endpoint.
  */
-@UriEndpoint(firstVersion = "1.0.0-SNAPSHOT", scheme = "redmine", title = "Redmine", syntax="redmine:name", 
-             consumerClass = RedmineConsumer.class, label = "custom")
+@UriEndpoint(firstVersion = "1.0.0-SNAPSHOT",
+    scheme = "redmine",
+    title = "Redmine",
+    syntax="redmine:target", 
+    consumerClass = RedmineConsumer.class,
+    label = "Redmine")
 public class RedmineEndpoint extends DefaultEndpoint {
     @UriPath @Metadata(required = "true")
-    private String name;
+    private String target;
     @UriParam(defaultValue = "10")
     private int option = 10;
 
@@ -46,12 +50,12 @@ public class RedmineEndpoint extends DefaultEndpoint {
     /**
      * Some description of this option, and what it does
      */
-    public void setName(String name) {
-        this.name = name;
+    public void setTarget(String name) {
+        this.target = name;
     }
 
-    public String getName() {
-        return name;
+    public String getTarget() {
+        return target;
     }
 
     /**
