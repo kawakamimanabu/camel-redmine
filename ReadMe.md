@@ -1,6 +1,12 @@
 # camel-redmine: Apache Camel Component for Redmine
 Level: Beginner  
 
+
+## What is this?
+
+This is Apache Camel component to connect Redmine.
+
+
 ## How to build  
 
 To build this project use  
