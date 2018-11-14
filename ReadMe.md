@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.com/kawakamimanabu/camel-redmine.svg?branch=master)](https://travis-ci.com/kawakamimanabu/camel-redmine)
+
 # camel-redmine: Apache Camel Component for Redmine
 Level: Beginner  
 
