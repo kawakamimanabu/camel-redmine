@@ -39,3 +39,4 @@ redmine/.settings/org.eclipse.wst.validation.prefs
 .settings/org.eclipse.wst.validation.prefs
 .classpath
 /.DS_Store
+.settings/org.eclipse.jdt.ui.prefs
