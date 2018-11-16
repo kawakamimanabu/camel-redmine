@@ -12,6 +12,12 @@ This is Apache Camel component to connect Redmine.
 
 ## How to build  
 
+To run Redmine on local with Docker.
+
+[Docker Hub Redmine](https://hub.docker.com/_/redmine/)
+
+    docker run -d --name some-redmine redmine
+
 To build this project use  
 
     mvn install

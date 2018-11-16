@@ -6,6 +6,7 @@ import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
 
 public class RedmineComponentTest extends CamelTestSupport {
+	private final String APIKEY = "key";
 
     @Test
     public void testRedmine() throws Exception {
@@ -19,8 +20,8 @@ public class RedmineComponentTest extends CamelTestSupport {
     protected RouteBuilder createRouteBuilder() throws Exception {
         return new RouteBuilder() {
             public void configure() {
-                from("redmine://foo")
-                  .to("redmine://bar")
+                from("redmine://localhost:3000")
+                  .to("redmine://localhost:3000?apikey=" + APIKEY)
                   .to("mock:result");
             }
         };

@@ -15,14 +15,14 @@ import org.apache.camel.spi.UriPath;
 @UriEndpoint(firstVersion = "1.0.0-SNAPSHOT",
     scheme = "redmine",
     title = "Redmine",
-    syntax="redmine:target", 
+    syntax="redmine:url", 
     consumerClass = RedmineConsumer.class,
     label = "Redmine")
 public class RedmineEndpoint extends DefaultEndpoint {
     @UriPath @Metadata(required = "true")
-    private String target;
-    @UriParam(defaultValue = "10")
-    private int option = 10;
+    private String url;
+    @UriParam(defaultValue = "apikey")
+    private String apikey = "";
 
     public RedmineEndpoint() {
     }
@@ -48,24 +48,24 @@ public class RedmineEndpoint extends DefaultEndpoint {
     }
 
     /**
-     * Some description of this option, and what it does
+     * Redmine URL
      */
-    public void setTarget(String name) {
-        this.target = name;
+    public void setUrl(String name) {
+        this.url = name;
     }
 
-    public String getTarget() {
-        return target;
+    public String getUrl() {
+        return url;
     }
 
     /**
-     * Some description of this option, and what it does
+     * Redmine API Key
      */
-    public void setOption(int option) {
-        this.option = option;
+    public void setApikey(String apikey) {
+        this.apikey = apikey;
     }
 
-    public int getOption() {
-        return option;
+    public String getApikey() {
+        return apikey;
     }
 }

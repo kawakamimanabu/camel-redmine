@@ -18,6 +18,7 @@ public class RedmineProducer extends DefaultProducer {
     }
 
     public void process(Exchange exchange) throws Exception {
+    	//TODO invoke Redmine API
         System.out.println(exchange.getIn().getBody());    
     }
 
