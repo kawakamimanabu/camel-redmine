@@ -9,6 +9,10 @@ Level: Beginner
 
 This is Apache Camel component to connect Redmine.
 
+Thanks to redmine-java-api
+
+[redmine-java-api](https://github.com/taskadapter/redmine-java-api)
+
 
 ## How to build  
 
