@@ -33,11 +33,11 @@ public class RedmineProducer extends DefaultProducer {
         	redmineManager.setObjectsPerPage(100);
         	List<Issue> issues = redmineManager.getIssueManager().getIssues(project.getIdentifier(), null);
         	for (Issue issue : issues) {
-        	    System.out.println(issue.toString());
+        		LOG.info(issue.toString());
         	}    	
     	}
     	exchange.getIn().setBody(projects);
-        System.out.println(exchange.getIn().getBody());    
+    	LOG.info(exchange.getIn().getBody().toString());
     }
 
 }
