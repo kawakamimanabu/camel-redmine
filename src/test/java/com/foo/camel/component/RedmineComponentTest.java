@@ -22,7 +22,7 @@ public class RedmineComponentTest extends CamelTestSupport {
         return new RouteBuilder() {
             public void configure() {
                 from("redmine://"+ URL + "?apikey=" + APIKEY)
-                  .to("redmine://"+ URL + "?apikey=" + APIKEY)
+//                  .to("redmine://"+ URL + "?apikey=" + APIKEY)
                   .to("mock:result");
             }
         };
