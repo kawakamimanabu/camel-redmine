@@ -20,24 +20,23 @@ public class RedmineProducer extends DefaultProducer {
     private RedmineEndpoint endpoint;
 
     public RedmineProducer(RedmineEndpoint endpoint) {
-        super(endpoint);
-        this.endpoint = endpoint;
+      super(endpoint);
+      this.endpoint = endpoint;
     }
 
     public void process(Exchange exchange) throws Exception {
-    	RedmineManager redmineManager = 
-    			RedmineManagerFactory.createWithApiKey(endpoint.getUrl(), endpoint.getApikey());
-    	List<Project> projects = redmineManager.getProjectManager().getProjects();
-    	if (projects.size() > 0) {
-    		Project project = projects.get(0);
-        	redmineManager.setObjectsPerPage(100);
-        	List<Issue> issues = redmineManager.getIssueManager().getIssues(project.getIdentifier(), null);
-        	for (Issue issue : issues) {
-        		LOG.info(issue.toString());
-        	}    	
-    	}
-    	exchange.getIn().setBody(projects);
-    	LOG.info(exchange.getIn().getBody().toString());
+      RedmineManager redmineManager = 
+        RedmineManagerFactory.createWithApiKey(endpoint.getUrl(), endpoint.getApikey());
+      List<Project> projects = redmineManager.getProjectManager().getProjects();
+      if (projects.size() > 0) {
+        Project project = projects.get(0);
+          redmineManager.setObjectsPerPage(100);
+          List<Issue> issues = redmineManager.getIssueManager().getIssues(project.getIdentifier(), null);
+          for (Issue issue : issues) {
+            LOG.info(issue.toString());
+          }
+      }
+      exchange.getIn().setBody(projects);
+      LOG.info(exchange.getIn().getBody().toString());
     }
-
 }

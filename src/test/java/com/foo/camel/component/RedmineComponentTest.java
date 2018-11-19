@@ -12,7 +12,7 @@ public class RedmineComponentTest extends CamelTestSupport {
     @Test
     public void testRedmine() throws Exception {
         MockEndpoint mock = getMockEndpoint("mock:result");
-        mock.expectedMinimumMessageCount(1);       
+        mock.expectedMinimumMessageCount(1);
         
         assertMockEndpointsSatisfied();
     }
